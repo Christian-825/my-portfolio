@@ -2,7 +2,7 @@
 	<!-- tools -->
 	
 	<div class="row mb-5 flex-column">
-	<h1 class="mt-5 py-3 text-center" id="tools" >Tools</h1>
+	<h1 class="mt-5 py-3 text-center" id="tools" >Tech Stack</h1>
 	    
 	    <div class="row text-center justify-content-center px-5 py-3 tools-img">
 

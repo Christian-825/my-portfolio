@@ -16,9 +16,56 @@ body {
 }
 
 
-.navbar {
-	background-color: 
+/* Glassy Navbar for Dark Background */
+.navbar.glassy-navbar {
+  background-color: rgba(255, 255, 255, 0.05);         /* Subtle light tint over black */
+  backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);   /* Thin white border */
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.05);     /* Light glow */
+  transition: all 0.3s ease;
 }
+
+/* Navbar brand text */
+.navbar-brand {
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+/* Nav links */
+/* Base nav link style */
+.navbar-dark .navbar-nav .nav-link {
+  position: relative;
+  color: #ccc;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  overflow: hidden;
+}
+
+/* Underline element: initially invisible and scaled to 0 */
+.navbar-dark .navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #ccc; 
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* On hover: scale to full width (left to right) */
+.navbar-dark .navbar-nav .nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+
+
 
 #projects {	
 	font-family: 'Oswald', sans-serif;

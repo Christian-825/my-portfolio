@@ -1,6 +1,6 @@
 <template>
   <!-- My Projects Section -->
-  <h1 class="py-3 text-center text-light" id="projects"> My Projects </h1>
+  <h1 class="py-3 text-center text-light" id="projects"> My Portfolio</h1>
   <section class="pb-5 px-5">
     <!-- Loop through each group of 3 projects -->
     <div 

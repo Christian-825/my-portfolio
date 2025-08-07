@@ -1,7 +1,7 @@
 <template>
  <!-- Contact Section -->
 
- <h1 class="text-center fw-bold py-3 text-light" id="contact">Contact</h1>
+ <h1 class="text-center fw-bold py-3 text-light" id="contact">Connect</h1>
  <div >
    
    <div  class="row align-items-start mb-5 p-5" >
