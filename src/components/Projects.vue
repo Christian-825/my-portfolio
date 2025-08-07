@@ -1,12 +1,12 @@
 <template>
   <!-- My Projects Section -->
-  <h1 class="py-3 text-center text-light" id="projects">My Projects</h1>
+  <h1 class="py-3 text-center text-light" id="projects"> My Projects </h1>
   <section class="pb-5 px-5">
     <!-- Loop through each group of 3 projects -->
     <div 
       v-for="(group, index) in chunkedProjects" 
       :key="index" 
-      class="row my-5 justify-content-center"
+      class="row justify-content-center"
     >
       <!-- For each project in the current group, render a ProjectCard -->
       <ProjectCard 

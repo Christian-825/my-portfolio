@@ -1,6 +1,6 @@
 <template>
-  <div class="col-lg-4 col-md-6 col-12 mb-4">
-    <div class="card h-100 p-4 shadow-lg">
+  <div class="col-lg-4 col-md-6 col-12 g-5">
+    <div class="card h-100 p-3 shadow-lg">
       <img :src="project.image" class="card-img-top img-fluid" alt="Project Image" />
       <div class="card-body">
         <h5 class="card-title">{{ project.title }}</h5>

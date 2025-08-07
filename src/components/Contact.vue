@@ -4,11 +4,11 @@
  <h1 class="text-center fw-bold py-3 text-light" id="contact">Contact</h1>
  <div >
    
-   <div  class="row align-items-center my-5 p-5" >
+   <div  class="row align-items-start mb-5 p-5" >
 
      <!-- Map -->
      <div class="col-md-6 mt-4 map-container">
-       <div class="ratio ratio-16x9">
+       <div >
          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.4793477193176!2d120.98763231483886!3d14.580190589817643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca1c39dbfc0f%3A0x88a312041bd3b856!2sCentro%20Escolar%20University!5e0!3m2!1sen!2sph!4v1718630916645!5m2!1sen!2sph"
            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
        </div>
@@ -49,7 +49,7 @@
            </div>
 
 
-           <button type="submit" class="btn btn-outline-dark px-4 rounded-pill">Submit</button>
+           <button type="submit" class="btn btn-outline-light mb-3 px-4 rounded-pill">Submit</button>
          </div>
 
           <div class="d-flex justify-content-end mt-2">
