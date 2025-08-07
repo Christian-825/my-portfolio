@@ -158,7 +158,7 @@ a {
 
 .map-container iframe {
 	width: 100%;
-	height: 300px;
+	height: 320px;
 	min-height: 100%;
 	position: relative;  /* or just remove position entirely if not needed */
   margin-bottom: 2rem; /* ensures spacing below the map */
