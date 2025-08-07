@@ -9,8 +9,7 @@
      <!-- Map -->
      <div class="col-md-6 mt-4 map-container">
        <div >
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.4793477193176!2d120.98763231483886!3d14.580190589817643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca1c39dbfc0f%3A0x88a312041bd3b856!2sCentro%20Escolar%20University!5e0!3m2!1sen!2sph!4v1718630916645!5m2!1sen!2sph"
-           style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15450.611123059089!2d121.04457619948626!3d14.504611275524935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cf3866bbb3b7%3A0x4ca0ad680e4a5b0d!2sSouth%20Signal%20Village%2C%20Taguig%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1754552523270!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
        </div>
      </div>
      <!-- Map -->
