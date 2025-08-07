@@ -35,30 +35,35 @@ body {
 /* Nav links */
 .navbar-dark .navbar-nav .nav-link {
   position: relative;
+  display: inline-block; /* Ensure the link only takes up the space of the text */
   color: #f5f5f5;
   font-weight: 600;
   transition: color 0.3s ease;
   overflow: hidden;
 }
 
-/* Underline element: initially invisible and scaled to 0 */
+/* Underline element: starts at 0 width */
 .navbar-dark .navbar-nav .nav-link::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   height: 2px;
-  width: 100%;
-  background-color: #f5f5f5; 
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.4s ease-in-out;
+  width: 0; /* Start at zero width */
+  background-color: #46A5FF;
+  transition: width 0.4s ease-in-out;
 }
 
-/* On hover: scale to full width (left to right) */
+/* On hover: underline grows to text width */
 .navbar-dark .navbar-nav .nav-link:hover::after {
-  transform: scaleX(1);
+  width: 100%;
 }
+
+/* On hover: change text color */
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #46A5FF;
+}
+
 
 
 
@@ -163,7 +168,7 @@ a {
 }
 
 .card {
-	background-image: linear-gradient(to top, #121212, #3e3e3e, #6f6f6f, #a4a4a4, #dddddd);
+	background-image: linear-gradient(to top, #121212, #2f3044, #45537d, #4f7abc, #46a5ff);
 	border: 1px solid #f5f5f5;
 	border-radius: 0;
 }
