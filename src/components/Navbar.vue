@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top pe-5 glassy-navbar">
-    <a class="navbar-brand pl-5 py-2" href="#landing"><Tian class="dev">CONsole.log()</Tian></a>
+    <a class="navbar-brand pl-5 py-2" href="#landing"><Tian class="dev">CON++</Tian></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
