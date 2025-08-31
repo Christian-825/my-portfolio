@@ -58,7 +58,7 @@ export default function Navbar() {
           {/* Mobile download Resume Button */}
           <li>
             <a
-              href="/path-to-resume.pdf"
+              href="/public/Christian_CV.pdf"
               download
               className="hover:bg-blue-400 text-white py-2 px-4 rounded-md border-2 border-blue-400 hover:text-gray-900 transition"
               onClick={() => setIsOpen(false)}
