@@ -8,19 +8,16 @@ export default function Contact() {
 
   const recaptchaContainer = useRef(null);
   const recaptchaWidgetId = useRef(null);
-  const SITE_KEY = "6LfkzZIrAAAAADbA7SGk3R_zTv73z7qHvgNyS2u1"; // Replace with your site key
+  const SITE_KEY = "6LfkzZIrAAAAADbA7SGk3R_zTv73z7qHvgNyS2u1";
 
-  // Success callback
   function onRecaptchaSuccess(token) {
     setRecaptchaToken(token);
   }
 
-  // Expired callback
   function onRecaptchaExpired() {
     setRecaptchaToken("");
   }
 
-  // Render reCAPTCHA widget
   function renderRecaptcha() {
     if (!window.grecaptcha) {
       console.error("reCAPTCHA not loaded");
@@ -38,7 +35,6 @@ export default function Contact() {
     );
   }
 
-  // Reset reCAPTCHA
   function resetRecaptcha() {
     if (recaptchaWidgetId.current !== null) {
       window.grecaptcha.reset(recaptchaWidgetId.current);
@@ -46,7 +42,6 @@ export default function Contact() {
     }
   }
 
-  // Load reCAPTCHA when component mounts
   useEffect(() => {
     const interval = setInterval(() => {
       if (window.grecaptcha && window.grecaptcha.render) {
@@ -67,12 +62,11 @@ export default function Contact() {
     }
 
     console.log({ name, email, message, recaptchaToken });
-
     resetRecaptcha();
   };
 
   return (
-   <section className="w-full px-6 sm:px-12 md:px-20 pb-14 bg-gray-800 rounded-lg shadow-lg">
+    <section className="w-full px-6 sm:px-12 md:px-20 pb-14 bg-gray-800 rounded-lg shadow-lg overflow-x-hidden">
       <div className="text-center">
         <h1 id="contact" className="pt-24 pb-20 text-3xl md:text-4xl font-bold">
           <span className="inline-block border-b-4 border-blue-400 pb-5">
@@ -80,14 +74,15 @@ export default function Contact() {
           </span>
         </h1>
       </div>
+
       <div className="grid md:grid-cols-2 gap-8 mb-10">
         {/* Map */}
-        <div className="map-container">
+        <div className="map-container overflow-hidden">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7722.229!2d121.0437!3d14.5534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2z!5e0!3m2!1sen!2sPH!4v1700000000000"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="w-full h-80 rounded-xl"
+            className="w-full max-w-full h-80 rounded-xl block"
           ></iframe>
         </div>
 
@@ -122,20 +117,17 @@ export default function Contact() {
             ></textarea>
 
             <div className="flex justify-between items-center">
-              
-
               <button
                 type="submit"
                 className="px-6 py-2 rounded-full border border-gray-600 text-white hover:bg-gray-800 transition"
               >
                 Submit
               </button>
-              <div className="flex justify-end mt-2">
-              <div ref={recaptchaContainer}></div>
-            </div>
-            </div>
 
-            
+              <div className="flex justify-end mt-2">
+                <div ref={recaptchaContainer}></div>
+              </div>
+            </div>
           </form>
         </div>
         {/* Form End */}
