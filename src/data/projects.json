@@ -30,7 +30,7 @@
     "description": "MERN E-Commerce Platform. The platform features dynamic product catalog with filtering, sorting, real-time search, seamless cart updates, secure checkout, admin dashboard with analytics, user management.",
     "image": "/thumbnails/ecommerceApp.png",
     "tech": ["Vue 3", "Vite", "Pinia", "Vue Router"],
-    "liveUrl": "https://csp3-nievera-oxales.vercel.app/"
+    "liveUrl": "https://sole-syndicate-phi.vercel.app/"
   },
   {
     "id": 5,
@@ -46,7 +46,7 @@
     "description": "C.NOTES - A responsive website for a musical institute built with HTML, Bootstrap 5, and custom CSS. Features include program showcases, course categories, contact form, and a location map.",
     "image": "/thumbnails/staticApp2.png",
     "tech": ["HTML5", "CSS", "Bootstrap 5", "JavaScript"],
-    "liveUrl": "https://christian-825.github.io/s82/"
+    "liveUrl": "https://christian-825.github.io/edu-hub/"
   },
   {
     "id": 7,
